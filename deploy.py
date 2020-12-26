@@ -214,7 +214,7 @@ def deploy(model):
         
         fig, ax = plt.subplots(1)
         ax.imshow(np_imgs[j])
-        print(detected_boxes.shape[0])
+        #print(detected_boxes.shape[0])
         for n in range(detected_boxes.shape[0]):
             x1 = detected_boxes[n, 0]
             y1 = detected_boxes[n, 1]
