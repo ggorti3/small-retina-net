@@ -18,6 +18,8 @@ Below are some examples of the network inferencing on test images. Like many SSD
 
 ![Detection on living room](./sample_detections/living_room.jpg)
 
+![Detection on cyclers](./sample_detections/cycling.jpg)
+
 There is also code provided to train a new network using the pascalvoc or coco dataset, which must be downloaded separately.
 
 
