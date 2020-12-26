@@ -232,7 +232,7 @@ def deploy(model):
         
         
 if __name__ == "__main__":
-    DEVICE = torch.device("cpu")
+    DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     net = SmallRetinaNet(21, DEVICE)
     net.load_state_dict(torch.load("models/small_retinanet_pascalvoc_1.pt", map_location=DEVICE))
     #test(net, "./sample_images/IMG_8171.JPG")
